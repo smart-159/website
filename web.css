@@ -1,3 +1,4 @@
+/* mobile phones and tablets view*/
 @media screen and (max-width:768px) {
     
     *{
@@ -8,7 +9,7 @@
     body{
         line-height: 1.2em;
         font-size: 16px;
-        overflow: auto;
+        overflow-x:hidden;
         font-family: 'Times New Roman', Times, serif;
     }
 
@@ -85,6 +86,7 @@
         
         color: rgb(136, 19, 19);
     }
+
     #large-header{
         width: 100%;
         margin:20px 0 20px 10px
@@ -99,7 +101,8 @@
 
     .paragraph{
         color: #ffff;
-        margin-bottom: 20px;
+        margin: 20px 0 40px 40px;
+        
         width: 80%;
     }
 
@@ -110,6 +113,7 @@
         border: none;
         padding: 5px;
         margin-left: 25%;
+        margin-bottom: 20%;
         border-radius: 20px;
         color: #ffff;
         font-size: 16px;
@@ -124,7 +128,7 @@
         animation-name: turn;
         animation-delay: 2s;
         animation-duration: 4s;
-        animation-iteration-count: 3;
+        animation-iteration-count: infinite;
         animation-fill-mode: forwards;
     }
 
@@ -188,5 +192,211 @@
         color: #ffff;
         padding-top: 30px;
         
+    }
+}
+
+/* Desktop and laptop view*/
+@media screen and (min-width:768px) {
+    body{
+        line-height: 1.2em;
+        font-size: 16px;
+        overflow-x:hidden;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .main-container{
+        width: 100%;
+        background-image: url(images/showcase.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+        
+    }
+    
+    .container-1,.container-2{
+        width: 100%;
+    }
+    
+    span{
+        color: rgb(202, 20, 20);
+    }
+    
+    #first-header{
+        color: white;
+        padding-left: 10%;
+        font-weight: 700;
+    
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    #nav-bar ul{
+        display: flex;
+        margin:30px 0 30px 0;
+    }
+    
+    #nav-bar ul li{
+        text-transform: uppercase;
+        padding: 9px 0 9px 0;
+        margin-left: 20px;
+        list-style: none;
+    }
+    
+    #nav-bar ul li{
+        text-transform: uppercase;
+        padding: 9px 0 9px 0;
+        margin-left: 20px;
+        list-style: none;
+    }
+    
+    #nav-bar ul li a{
+        color: white;
+        font-weight: bolder;
+    
+    }
+    
+    .item-6{
+        background: rgb(219, 52, 52);
+        padding: 10px;
+        border-radius: 20px;
+    }
+    
+    #nav-bar ul .item-1{
+        color: red;
+    }
+    
+    #small-header{
+        width: 70%;
+        margin:20% 0 0 30% ;
+    }
+    
+    #small-header h4{
+        color:white;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 25px;
+        color: rgb(136, 19, 19);
+    }
+
+    #large-header{
+        width: 50%;
+        margin:20px 0 0 30%;
+    }
+
+    #large-header h1{
+        font-size: 23px;
+        color: #ffff;
+        text-transform: uppercase;
+        padding-bottom: 12px;
+    }
+
+    .paragraph{
+        color: #ffff;
+        margin:20px 0 20px 15%;
+        width: 80%;
+    }
+
+    .volunteer{
+        width: 150px;
+        background:rgb(155, 36, 36);
+        outline: none;
+        border: none;
+        padding: 5px;
+        margin:40px 0 15% 40%;
+        border-radius: 20px;
+        color: #fff;
+        text-shadow: 2px 3px 4px green;
+        font-size: 19px;
+        
+
+        /* i usually get confused using just on line
+        animation property so please don't mind the unclean code*/
+
+        animation-name: turn;
+        animation-delay: 2s;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    }
+
+    .volunteer:hover{
+        animation-name: turn;
+        animation-delay: 2s;
+        animation-duration: 4s;
+        animation-iteration-count: 3;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes turn {
+        20%{
+            background: rgb(13, 85, 13);
+            transform: rotateX(-180deg)
+        }
+
+        50%{
+            transform: rotate(180deg);
+        }
+        100%{
+            background: rgb(150, 18, 18);
+        }
+    }
+
+    /* styling for the elements with the class of blocks*/
+
+    .blocks-container{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+       
+        
+    }
+
+    
+
+    .block{
+        margin-left:10%;
+    }
+
+    .blocks-container div{
+        
+        padding: 10px;
+        
+    }
+
+    .block h3{
+        text-transform: uppercase;
+    }
+
+    .block .p1{
+        margin: 5px 0 5px 0;
+        width:50%;
+        color: rgb(199, 42, 42);
+        border-bottom: 2px solid rgb(199, 42, 42);
+    }
+    
+    .block .p2{
+        color: #008000;
+        font-size: 18px;
+        text-shadow: 2px 2px 4px #000;
+    }
+
+    .block-2{
+        background: rgb(192, 14, 14);
+        width: 40%;
+        margin-left:10%;
+    }
+
+    .block-2 h4{
+        color: #ffff;
+        text-transform: capitalize;
+    }
+
+    .block-2 .side-par{
+        color: #ffff;
+        padding-top: 30px;
+        width: 100%;
     }
 }
